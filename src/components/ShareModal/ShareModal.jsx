@@ -1,4 +1,4 @@
-import { useDisclosure } from '@mantine/hooks';
+// import { useDisclosure } from '@mantine/hooks';
 // import { Group, Button } from '@mantine/core';
 import './ShareModal.css'
 import PostShare from "../PostShare/PostShare.jsx"
@@ -6,7 +6,7 @@ import PostShare from "../PostShare/PostShare.jsx"
 import { Modal, useMantineTheme } from '@mantine/core';
 
 function ShareModal({modalOpened, setModalOpened}) {
-  const [opened, { open, close }] = useDisclosure(false);
+  // const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
 
   return (
