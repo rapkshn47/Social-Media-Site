@@ -15,7 +15,9 @@ const Auth = ({ children }) => {
     setuser(null)
   }
   return (
+    
     <div className="Auth">
+      {/* { const [first, setfirst] = useState(second)} */}
       <AuthContext.Provider value={{user, login, logout}}>{children}</AuthContext.Provider>
       <div className="a-left">
         <img src={Logo} alt="" />
@@ -36,55 +38,55 @@ export const useAuth = () =>{
 
 
 
-function SignUp() {
-  return (
-    <div className="a-right">
-      <form className="info-form auth-form">
-        <h3>SignUp</h3>
-        <div>
-          <input
-            type="text"
-            placeholder="First Name"
-            className="info-input"
-            name="firstName"
-          />
-          <input
-            type="text"
-            placeholder="Last Name"
-            className="info-input"
-            name="lastName"
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Username"
-            className="info-input"
-            name="username"
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Password"
-            className="info-input"
-            name="password"
-          />
-          <input
-            type="text"
-            placeholder="Confirm Password"
-            className="info-input"
-            name="confirmPassword"
-          />
-        </div>
-        <div>
-          <span>Already have an account. Login!</span>
-        </div>
-        <button className="button su-button" type="submit">Submit</button>
-      </form>
-    </div>
-  );
-}
+// function SignUp() {
+//   return (
+//     <div className="a-right">
+//       <form className="info-form auth-form">
+//         <h3>SignUp</h3>
+//         <div>
+//           <input
+//             type="text"
+//             placeholder="First Name"
+//             className="info-input"
+//             name="firstName"
+//           />
+//           <input
+//             type="text"
+//             placeholder="Last Name"
+//             className="info-input"
+//             name="lastName"
+//           />
+//         </div>
+//         <div>
+//           <input
+//             type="text"
+//             placeholder="Username"
+//             className="info-input"
+//             name="username"
+//           />
+//         </div>
+//         <div>
+//           <input
+//             type="text"
+//             placeholder="Password"
+//             className="info-input"
+//             name="password"
+//           />
+//           <input
+//             type="text"
+//             placeholder="Confirm Password"
+//             className="info-input"
+//             name="confirmPassword"
+//           />
+//         </div>
+//         <div>
+//           <span>Already have an account. Login!</span>
+//         </div>
+//         <button className="button su-button" type="submit">Submit</button>
+//       </form>
+//     </div>
+//   );
+// }
 
 function LogIn() {
   return(

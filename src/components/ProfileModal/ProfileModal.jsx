@@ -1,11 +1,11 @@
-import { useDisclosure } from '@mantine/hooks';
+// import { useDisclosure } from '@mantine/hooks';
 // import { Group, Button } from '@mantine/core';
 import './ProfileModal.css'
 
 import { Modal, useMantineTheme } from '@mantine/core';
 
 function ProfileModal({modalOpened, setModalOpened}) {
-  const [opened, { open, close }] = useDisclosure(false);
+  // const [opened, { open, close }] = useDisclosure(false);
   const theme = useMantineTheme();
 
   return (
