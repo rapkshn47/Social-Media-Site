@@ -1,0 +1,96 @@
+.Auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4em;
+  position: relative;
+}
+
+.a-left {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.a-left > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.web-name > h1 {
+  font-style: 3rem;
+  background-color: red;
+
+  /* creating gradient */
+  background-image: var(--buttonBg);
+
+  /* Set Background size and repeat properties */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* using the text as a mask for bg */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.web-name > h6 {
+  font-size: 0.85rem;
+}
+
+.web-name {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.web-name > h1,
+h6 {
+  margin: 0;
+}
+
+.info-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-input {
+  border: none;
+  outline: none;
+  background-color: var(--inputColor);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  /* flex:converts the available space to the total width */
+}
+
+.info-form > div {
+  width: 90%;
+  gap: 1rem;
+  display: flex;
+  height: 2rem;
+}
+
+.su-button{
+  height: 2rem;
+  width: 6rem;
+  align-self: flex-end;
+}
+
+.auth-form{
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.auth-form > div{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
